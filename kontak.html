@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Kontak - Kampung Kelulut</title>
+</head>
+<body>
+  <header>
+    <h1>Kontak dan Pendaftaran Kunjungan</h1>
+    <nav>
+      <ul>
+        <li><a href="index.html">Beranda</a></li>
+        <li><a href="budidaya.html">Budidaya</a></li>
+        <li><a href="kontak.html">Kontak</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main>
+    <section>
+      <h2>Form Kunjungan Kebun</h2>
+      <p>Isi data di bawah ini untuk mendaftar kunjungan. Kolom bertanda * wajib
+        diisi.</p>
+
+      <form action="#" method="post">
+        <fieldset>
+          <legend>Data Pengunjung</legend>
+
+          <p>
+            <label for="nama">Nama lengkap *</label><br>
+            <input type="text" id="nama" name="nama"
+                placeholder="Contoh: Budi Santoso" minlength="3" required>
+          </p>
+
+          <p>
+            <label for="email">Email *</label><br>
+            <input type="email" id="email" name="email" placeholder="nama@email.com"
+                required>
+          </p>
+
+          <p>
+            <label for="telepon">Nomor telepon</label><br>
+            <input type="tel" id="telepon" name="telepon" pattern="[0-9]{10,13}"
+                placeholder="08123456789">
+          </p>
+
+          <p>
+            <label for="tanggal">Tanggal kunjungan *</label><br>
+            <input type="date" id="tanggal" name="tanggal" required>
+          </p>
+
+          <p>
+            <label for="jumlah">Jumlah orang (1-20) *</label><br>
+            <input type="number" id="jumlah" name="jumlah" min="1" max="20" value="1"
+                required>
+          </p>
+        </fieldset>
+
+        <fieldset>
+          <legend>Tujuan Kunjungan *</legend>
+          <p>
+            <input type="radio" id="belajar" name="tujuan" value="belajar" required>
+            <label for="belajar">Belajar budidaya</label>
+          </p>
+          <p>
+            <input type="radio" id="beli" name="tujuan" value="beli">
+            <label for="beli">Membeli madu</label>
+          </p>
+          <p>
+            <input type="radio" id="wisata" name="tujuan" value="wisata">
+            <label for="wisata">Wisata edukasi</label>
+          </p>
+        </fieldset>
+
+        <fieldset>
+          <legend>Minat Tambahan</legend>
+          <p>
+            <input type="checkbox" id="propolis" name="minat" value="propolis">
+            <label for="propolis">Produk propolis</label>
+          </p>
+          <p>
+            <input type="checkbox" id="bibit" name="minat" value="bibit">
+            <label for="bibit">Bibit koloni</label>
+          </p>
+        </fieldset>
+
+        <p>
+          <label for="pesan">Pesan</label><br>
+          <textarea id="pesan" name="pesan" rows="4" cols="40"
+              maxlength="200"></textarea>
+        </p>
+
+        <p>
+          <input type="checkbox" id="setuju" name="setuju" required>
+          <label for="setuju">Saya setuju data saya digunakan hanya keperluan
+            kunjungan *</label>
+        </p>
+
+        <button type="submit">Kirim Pendaftaran</button>
+        <button type="reset">Reset</button>
+      </form>
+    </section>
+
+    <section>
+      <h2>Alamat Kebun</h2>
+      <p>Jl. Madu Kelulut No. 12, Jakarta barat</p>
+      <p>Jam buka: Sabtu - Minggu, 08.00 - 15.00 WIB</p>
+    </section>
+  </main>
+
+  <footer>
+    <p>&copy; 2026 Kampung Kelulut</p>
+    <p><a href="index.html">Kembali ke Beranda</a></p>
+  </footer>
+</body>
+</html>
